@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Lab 5</title>
+	<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("demo.js", function(result){
+     $("div").append(field + " ");
+    });
+  });
+});
+</script>
+</head>
+<body>
+<button>Get JSON data</button>
+<div></div>
+
+</body>
+</html>
